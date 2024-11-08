@@ -1,14 +1,21 @@
-# Capturar tres números
-a = int(input("Ingresa el primer número: "))
-b = int(input("Ingresa el segundo número: "))
-c = int(input("Ingresa el tercer número: "))
+# Leer tres números
+num1 = int(input("Ingresa el primer número: "))
+num2 = int(input("Ingresa el segundo número: "))
+num3 = int(input("Ingresa el tercer número: "))
 
-# Verificar si uno de los números es divisible por otro
-if a != 0 and (b % a == 0 or c % a == 0):
-    print(f"{a} es divisor de {b}" if b % a == 0 else f"{a} es divisor de {c}")
-elif b != 0 and (a % b == 0 or c % b == 0):
-    print(f"{b} es divisor de {a}" if a % b == 0 else f"{b} es divisor de {c}")
-elif c != 0 and (a % c == 0 or b % c == 0):
-    print(f"{c} es divisor de {a}" if a % c == 0 else f"{c} es divisor de {b}")
+# Verificar divisibilidad entre los números
+if num1 % num2 == 0:
+    print(f"{num1} es divisible por {num2}")
+elif num1 % num3 == 0:
+    print(f"{num1} es divisible por {num3}")
+elif num2 % num1 == 0:
+    print(f"{num2} es divisible por {num1}")
+elif num2 % num3 == 0:
+    print(f"{num2} es divisible por {num3}")
+elif num3 % num1 == 0:
+    print(f"{num3} es divisible por {num1}")
+elif num3 % num2 == 0:
+    print(f"{num3} es divisible por {num2}")
 else:
-    print("Ninguno de los números es divisor de otro.")
+    print("Ninguno de los números es divisible por otro.")
+

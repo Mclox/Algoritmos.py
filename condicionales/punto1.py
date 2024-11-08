@@ -10,4 +10,3 @@ if numero < 0:
     #imprimimos el valor positivo del numero
     print("Su numero en valor positivo es: ", -numero)
 
-    
